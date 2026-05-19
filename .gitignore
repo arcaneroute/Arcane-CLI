@@ -1,0 +1,98 @@
+# ===========================
+# Dependencies
+# ===========================
+node_modules/
+.bun/
+bun.lock
+
+# ===========================
+# Build output
+# ===========================
+dist/
+out/
+build/
+*.tgz
+
+# ===========================
+# Environment & Secrets
+# ===========================
+.env
+.env.*
+!.env.example
+
+# ===========================
+# Runtime data
+# ===========================
+ARCANE_MEMORY.md
+.arcane/
+*.db
+*.sqlite
+
+# ===========================
+# Logs
+# ===========================
+logs/
+*.log
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# ===========================
+# Test & Coverage
+# ===========================
+coverage/
+*.lcov
+.nyc_output/
+
+# ===========================
+# TypeScript
+# ===========================
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+
+# ===========================
+# Editor & IDE
+# ===========================
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# ===========================
+# OS files
+# ===========================
+.DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+
+# ===========================
+# Cache
+# ===========================
+.eslintcache
+.cache/
+.parcel-cache/
+.turbo/
+
+# ===========================
+# AI agent files (not part of source)
+# ===========================
+ANTIGRAVITY.md
+CLAUDE.md
+AGENTS.md
+.agents/
+.claude/
+.junie/
+.kiro/
+/skills/
+docs/superpowers/
+
+# ===========================
+# Misc
+# ===========================
+opentui-binary
+*.tmp
+*.bak
+*.orig

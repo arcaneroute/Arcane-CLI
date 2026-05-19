@@ -1,0 +1,13 @@
+# Arcane Route ignore patterns (same syntax as .gitignore)
+node_modules/
+dist/
+.git/
+*.log
+bun.lock
+bun.lockb
+ARCANE_MEMORY.md
+coverage/
+.env
+.env.*
+*.db
+ref/

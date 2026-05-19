@@ -1,0 +1,51 @@
+{
+  "bin": {
+    "arcane": "./src/cli/CLIRouter.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.20.0",
+    "@arcane/logger": "workspace:*",
+    "@opentui/core": "latest",
+    "@opentui/solid": "latest",
+    "@types/node": "^25.6.0",
+    "arcane-agent": "workspace:*",
+    "arcane-ui": "workspace:*",
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0",
+    "ink": "^4.4.0",
+    "openai": "^4.52.0",
+    "semver": "^7.7.4",
+    "solid-js": "^1.9.0"
+  },
+  "description": "Zero-drift AI coding. Every claim verified. Every file real.",
+  "devDependencies": {
+    "@arcane-route/plugin-sdk": "workspace:*",
+    "@biomejs/biome": "^2.4.12",
+    "@types/bun": "^1.3.13",
+    "@types/semver": "^7.7.1",
+    "bun-types": "^1.3.13",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "bun": ">=1.1.0"
+  },
+  "name": "arcane-route",
+  "scripts": {
+    "build": "bun run build.ts",
+    "check": "biome check src/ test/ plugins/ packages/",
+    "check:fix": "biome check --write src/ test/ plugins/ packages/",
+    "dev": "bun --watch ./src/cli/CLIRouter.ts chat",
+    "format": "biome format --write src/ test/ plugins/ packages/",
+    "lint": "biome lint src/ test/ plugins/ packages/",
+    "start": "bun ./src/cli/CLIRouter.ts",
+    "test": "bun test",
+    "test:watch": "bun test --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "type": "module",
+  "version": "1.0.0",
+  "workspaces": [
+    "packages/*",
+    "plugins/*"
+  ]
+}

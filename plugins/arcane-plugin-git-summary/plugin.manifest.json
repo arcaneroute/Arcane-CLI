@@ -1,0 +1,42 @@
+{
+  "id": "arcane-plugin-git-summary",
+  "name": "Git Summary",
+  "version": "1.0.0",
+  "description": "Generates intelligent git commit summaries using AI after each session",
+  "author": "Arcane Route Team <team@arcane-route.dev>",
+  "homepage": "https://github.com/arcaneroute/arcane-plugin-git-summary",
+  "arcaneVersion": ">=1.0.0",
+  "entrypoint": "index.ts",
+  "hooks": ["chat:turn_complete"],
+  "commands": [
+    {
+      "name": "/git",
+      "description": "Generate a git commit message from the last session",
+      "alias": "/gs"
+    },
+    {
+      "name": "/gitcommit",
+      "description": "Generate and show git commit command",
+      "alias": "/gc"
+    }
+  ],
+  "permissions": ["fs:read", "shell:exec"],
+  "config": {
+    "schema": {
+      "type": "object",
+      "properties": {
+        "format": {
+          "type": "string",
+          "enum": ["conventional", "simple", "detailed"],
+          "default": "conventional",
+          "description": "Commit message format"
+        },
+        "autoGenerate": {
+          "type": "boolean",
+          "default": false,
+          "description": "Automatically generate summary after each turn"
+        }
+      }
+    }
+  }
+}

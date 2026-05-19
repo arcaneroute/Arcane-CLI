@@ -1,0 +1,5 @@
+[install]
+peer = "off"
+
+[run]
+preload = ["@opentui/solid/preload"]

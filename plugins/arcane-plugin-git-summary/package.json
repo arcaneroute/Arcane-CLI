@@ -1,0 +1,17 @@
+{
+  "name": "arcane-plugin-git-summary",
+  "version": "1.0.0",
+  "description": "Generates intelligent git commit summaries using AI after each session",
+  "author": "Arcane Route Team <team@arcane-route.dev>",
+  "homepage": "https://github.com/arcaneroute/arcane-plugin-git-summary",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@arcane-route/plugin-sdk": "workspace:*",
+    "@types/bun": "latest"
+  }
+}
